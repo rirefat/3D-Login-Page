@@ -37,4 +37,15 @@ body {
   background: linear-gradient(#fff, #fff, #e3e3e3);
   filter: blur(1px);
   z-index: 1;
+}
+.container .box::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: -1px;
+  width: 25px;
+  height: 100%;
+  background: linear-gradient(#fff, #fff, #9d9d9d);
+  filter: blur(1px);
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
