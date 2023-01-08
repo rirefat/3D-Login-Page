@@ -131,6 +131,52 @@ body{
                     color: #444;
                     margin-bottom: 20px;
                 }
+
+                .inputBox{
+                    position: relative;
+                    width: 100%;
+                    // padding: 10px 0 10px 25px;
+                    margin-top: 30px;
+                    // height: 100%;
+
+                    input{
+                        position: relative;
+                        width: 100%;
+                        padding: 10px 0 10px 25px;
+                        font-size: 1.25em;
+                        background: transparent;
+                        box-shadow: none;
+                        border: none;
+                        border-bottom: 3px solid #444;
+                        outline: none;
+                        color: #444;
+
+                        // &&:focus ~ span{
+                        //     transform: translateY(-20px);
+                        // }
+                        // &&:valid ~ span{
+                        //     transform: translateY(-20px);
+                        // }
+                    }
+                    
+                    i{
+                        position: absolute;
+                        left: 0;
+                        bottom: 15px;
+                        font-size: 1.25em;
+                        color: #444;
+                    }
+
+                    span{
+                        position: absolute;
+                        left: 0;
+                        padding: 10px 0 10px 25px;
+                        font-size: 1.25em;
+                        pointer-events: none;
+                        color: #444;
+                        transition: 0.5s;
+                    }
+                }
             }
         }
     }

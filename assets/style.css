@@ -118,4 +118,42 @@ body {
   font-size: 2em;
   color: #444;
   margin-bottom: 20px;
+}
+.container .box .content .form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+.container .box .content .form .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 10px 25px;
+  font-size: 1.25em;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border-bottom: 3px solid #444;
+  outline: none;
+}
+.container .box .content .form .inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  font-size: 1.25em;
+  color: #444;
+}
+.container .box .content .form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px 0 10px 25px;
+  font-size: 1.25em;
+  pointer-events: none;
+  color: #444;
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
+
+/* Special Factor */
+.content .form .inputBox input:focus ~ span,
+.content .form .inputBox input:valid ~ span{
+  transform: translateY(-20px);
+}
