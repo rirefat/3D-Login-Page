@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: consolas;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,12 +14,12 @@ body{
     background: #cfd1e1;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
-    align-items: center;  
-    
-    .box{
+    align-items: center;
+
+    .box {
         position: relative;
         width: 400px;
         height: 480px;
@@ -28,7 +28,7 @@ body{
         align-items: center;
         // background: #fff;
 
-        &::before{
+        &::before {
             content: '';
             position: absolute;
             top: 0;
@@ -40,19 +40,20 @@ body{
             z-index: 1;
         }
 
-        &::after{
+        &::after {
             content: '';
             position: absolute;
             top: 1px;
             right: -1px;
             width: 25px;
             height: 100%;
-            background: linear-gradient(#fff, #fff, #9d9d9d);
+            // background: linear-gradient(#fff, #fff, #9d9d9d);
+            background: #9d9d9d;
             filter: blur(1px);
             z-index: 1;
         }
 
-        .cover{
+        .cover {
             position: absolute;
             top: 0;
             left: -100px;
@@ -62,50 +63,50 @@ body{
             z-index: 10;
         }
 
-        .shadow{
+        .shadow {
             position: absolute;
             width: 100%;
             height: 100%;
             background: #eee;
 
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
                 top: 0;
-                left: calc(100% + 96px);        
+                left: calc(100% + 96px);
                 width: 120%;
                 height: 240%;
-                background: linear-gradient(rgba(0,0,0,0.075), transparent);
+                background: linear-gradient(rgba(0, 0, 0, 0.075), transparent);
                 transform: skewX(45deg);
             }
-            
-            &::after{
+
+            &::after {
                 content: '';
                 position: absolute;
                 bottom: -200%;
-                left: calc(100% + 80px);        
+                left: calc(100% + 80px);
                 width: 100%;
                 height: 200%;
-                background: linear-gradient(rgba(0,0,0,0.075), transparent);
+                background: linear-gradient(rgba(0, 0, 0, 0.075), transparent);
                 transform: skewX(45deg);
             }
         }
-        
-        .content{
+
+        .content {
             position: relative;
             width: 100%;
             height: 100%;
             background: linear-gradient(#dbdae1, #a3aaba);
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
-                        15px 15px 15px rgba(0,0,0,0.1),
-                        25px 10px 20px rgba(0,0,0,0.1),
-                        50px 50px 80px rgba(0,0,0,0.25),
-                        inset 3px 3px 2px #fff;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+                15px 15px 15px rgba(0, 0, 0, 0.1),
+                25px 10px 20px rgba(0, 0, 0, 0.1),
+                50px 50px 80px rgba(0, 0, 0, 0.25),
+                inset 3px 3px 2px #fff;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            .form{
+            .form {
                 position: relative;
                 width: 260px;
                 display: flex;
@@ -113,7 +114,7 @@ body{
                 align-items: center;
                 flex-direction: column;
 
-                .logo{
+                .logo {
                     width: 70px;
                     height: 70px;
                     background: #444;
@@ -126,20 +127,20 @@ body{
                     border-radius: 50%;
                 }
 
-                h2{
+                h2 {
                     font-size: 2em;
                     color: #444;
                     margin-bottom: 20px;
                 }
 
-                .inputBox{
+                .inputBox {
                     position: relative;
                     width: 100%;
                     // padding: 10px 0 10px 25px;
                     margin-top: 30px;
                     // height: 100%;
 
-                    input{
+                    input {
                         position: relative;
                         width: 100%;
                         padding: 10px 0 10px 25px;
@@ -177,8 +178,20 @@ body{
                             }
                         }
                     }
-                    
-                    i{
+
+                    input[type="submit"] {
+                        background: #444;
+                        color: #fff;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        padding: 10px;
+
+                        &:hover{
+                            background-color: black;
+                        }
+                    }
+
+                    i {
                         position: absolute;
                         left: 0;
                         bottom: 15px;
@@ -186,7 +199,7 @@ body{
                         color: #444;
                     }
 
-                    span{
+                    span {
                         position: absolute;
                         left: 0;
                         padding: 10px 0 10px 25px;
@@ -197,22 +210,30 @@ body{
                     }
                 }
 
-                .links{
+                .links {
                     width: 100%;
                     margin-top: 15px;
                     display: flex;
                     justify-content: space-between;
 
-                    a{
+                    a {
                         color: #444;
                         text-decoration: none;
 
-                        &:hover{
+                        &:hover {
                             color: black;
                             font-weight: 600;
                         }
 
                     }
+                }
+
+                .button {
+                    // background: #444;
+                    // color: #fff;
+                    // cursor: pointer;
+                    // border-radius: 4px;
+                    // padding: 10px;
                 }
             }
         }
