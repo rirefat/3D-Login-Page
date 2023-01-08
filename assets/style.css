@@ -90,4 +90,32 @@ body {
   height: 100%;
   background: linear-gradient(#dbdae1, #a3aaba);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), 15px 15px 15px rgba(0, 0, 0, 0.1), 25px 10px 20px rgba(0, 0, 0, 0.1), 50px 50px 80px rgba(0, 0, 0, 0.25), inset 3px 3px 2px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box .content .form {
+  position: relative;
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .box .content .form .logo {
+  width: 70px;
+  height: 70px;
+  background: #444;
+  color: #fff;
+  font-size: 1.75em;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.container .box .content .form h2 {
+  font-size: 2em;
+  color: #444;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
