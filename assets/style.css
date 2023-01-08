@@ -141,12 +141,16 @@ body {
   font-size: 0.9em;
   background-color: #444;
   color: #fff;
+  padding: 2px 12px;
+  border-radius: 4px;
 }
 .container .box .content .form .inputBox input:valid ~ span {
   transform: translateY(-20px);
   font-size: 0.9em;
   background-color: #444;
   color: #fff;
+  padding: 2px 12px;
+  border-radius: 4px;
 }
 .container .box .content .form .inputBox i {
   position: absolute;
@@ -163,4 +167,18 @@ body {
   pointer-events: none;
   color: #444;
   transition: 0.5s;
+}
+.container .box .content .form .links {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .box .content .form .links a {
+  color: #444;
+  text-decoration: none;
+}
+.container .box .content .form .links a:hover {
+  color: black;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

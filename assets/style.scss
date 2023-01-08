@@ -158,6 +158,8 @@ body{
                                     font-size: 0.9em;
                                     background-color: #444;
                                     color: #fff;
+                                    padding: 2px 12px;
+                                    border-radius: 4px;
                                 }
                             }
                         }
@@ -169,6 +171,8 @@ body{
                                     font-size: 0.9em;
                                     background-color: #444;
                                     color: #fff;
+                                    padding: 2px 12px;
+                                    border-radius: 4px;
                                 }
                             }
                         }
@@ -190,6 +194,24 @@ body{
                         pointer-events: none;
                         color: #444;
                         transition: 0.5s;
+                    }
+                }
+
+                .links{
+                    width: 100%;
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a{
+                        color: #444;
+                        text-decoration: none;
+
+                        &:hover{
+                            color: black;
+                            font-weight: 600;
+                        }
+
                     }
                 }
             }
