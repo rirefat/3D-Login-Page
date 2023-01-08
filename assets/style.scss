@@ -151,12 +151,27 @@ body{
                         outline: none;
                         color: #444;
 
-                        // &&:focus ~ span{
-                        //     transform: translateY(-20px);
-                        // }
-                        // &&:valid ~ span{
-                        //     transform: translateY(-20px);
-                        // }
+                        &:focus {
+                            ~ {
+                                span {
+                                    transform: translateY(-20px);
+                                    font-size: 0.9em;
+                                    background-color: #444;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        &:valid {
+                            ~ {
+                                span {
+                                    transform: translateY(-20px);
+                                    font-size: 0.9em;
+                                    background-color: #444;
+                                    color: #fff;
+                                }
+                            }
+                        }
                     }
                     
                     i{

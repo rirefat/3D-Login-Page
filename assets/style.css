@@ -134,6 +134,19 @@ body {
   border: none;
   border-bottom: 3px solid #444;
   outline: none;
+  color: #444;
+}
+.container .box .content .form .inputBox input:focus ~ span {
+  transform: translateY(-20px);
+  font-size: 0.9em;
+  background-color: #444;
+  color: #fff;
+}
+.container .box .content .form .inputBox input:valid ~ span {
+  transform: translateY(-20px);
+  font-size: 0.9em;
+  background-color: #444;
+  color: #fff;
 }
 .container .box .content .form .inputBox i {
   position: absolute;
@@ -151,9 +164,3 @@ body {
   color: #444;
   transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
-
-/* Special Factor */
-.content .form .inputBox input:focus ~ span,
-.content .form .inputBox input:valid ~ span{
-  transform: translateY(-20px);
-}
